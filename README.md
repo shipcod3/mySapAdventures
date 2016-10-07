@@ -1,5 +1,5 @@
 # mySapAdventures
-A quick methodology on testing SAP Applications for n00bz
+A quick methodology on testing/hacking SAP Applications for n00bz
 by: Jay Turla @shipcod3
 
 ## Discovery
