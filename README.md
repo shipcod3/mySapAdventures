@@ -12,7 +12,34 @@ https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web_Content/URL
 https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web_Content/CMS/SAP.fuzz.txt
 https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web_Content/sap.txt
 ```
-- 
+- Run bizploit's discovery plugins:
+```
+targets
+	addTarget
+		set host <host / ip addresses>
+	back
+	discoverConnectors all
+	set mode sap
+	back
+	show
+back
+plugins
+	discovery getClients
+	discovery config getClients
+	back
+	discovery findRegRFCServers
+	discovery config findRegRFCServers
+		set regTpnames rfcexec,execute,exec,run,IGS,sapgw,sapgw00,sapgw01,sapgw02,sapgw03,NSP,GATEWAY,GATEWAY 0
+	back
+	discovery getSaprouterInfo
+	back
+	discovery getApplicationServers
+	discovery icmURLScan
+	discovery ping
+  back
+back
+start
+```
 
 
 ```
