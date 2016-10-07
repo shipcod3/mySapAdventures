@@ -61,6 +61,15 @@ SAPCPIC : ADMIN
 EARLYWATCH: SUPPORT
 ```
 - Run Wireshark then authenticate to the client (SAP GUI) using the credentials you got because some clients transmit credentials without SSL.
+- Check for privilege escalations like using some SAP Transaction Codes for low-privilege users:
+```
+SU01 - To create and maintain the users
+SU01D - To Display Users
+SU10 - For mass maintenance
+SU02 - For Manual creation of profiles
+SM19 - Security audit - configuration
+SE84 - Information System for SAP R/3 Authorizations
+```
 
 
 
@@ -68,3 +77,4 @@ EARLYWATCH: SUPPORT
 - [SAP Penetration Testing Using Metasploit](http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf)
 - https://github.com/davehardy20/SAP-Stuff - a script to semi-automate Bizploit
 - [SAP NetWeaver ABAP security configuration part 3: Default passwords for access to the application](https://erpscan.com/press-center/blog/sap-netweaver-abap-security-configuration-part-2-default-passwords-for-access-to-the-application/)
+- [List of ABAP-transaction codes related to SAP security](https://wiki.scn.sap.com/wiki/display/Security/List+of+ABAP-transaction+codes+related+to+SAP+security)
