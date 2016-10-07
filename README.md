@@ -47,11 +47,24 @@ msf > use auxiliary/scanner/sap/sap_service_discovery
 msf > set rhost <host>
 msf > run
 ```
-
+## Testing the Thick Client / SAP GUI
+- Here is the command to connect to SAP GUI
 ```
 sapgui <sap server hostname> <system number>
 ```
+- Check for default credentials:
+```
+SAP* : 06071992, PASS
+DDIC : 19920706	
+TMSADM : PASSWORD, $1Pawd2&    	
+SAPCPIC : ADMIN	
+EARLYWATCH: SUPPORT
+```
+- Run Wireshark then authenticate to the client (SAP GUI) using the credentials you got because some clients transmit credentials without SSL.
+
+
 
 ## References
 - [SAP Penetration Testing Using Metasploit](http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf)
 - https://github.com/davehardy20/SAP-Stuff - a script to semi-automate Bizploit
+- [SAP NetWeaver ABAP security configuration part 3: Default passwords for access to the application](https://erpscan.com/press-center/blog/sap-netweaver-abap-security-configuration-part-2-default-passwords-for-access-to-the-application/)
