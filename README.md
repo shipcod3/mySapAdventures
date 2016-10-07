@@ -41,7 +41,12 @@ plugins
 back
 start
 ```
-- U
+- Use the sap_service_discovery auxiliary Metasploit module for enumerating SAP instances/services/components:
+```
+msf > use auxiliary/scanner/sap/sap_service_discovery
+msf > set rhost <host>
+msf > run
+```
 
 ```
 sapgui <sap server hostname> <system number>
