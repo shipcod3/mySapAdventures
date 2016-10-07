@@ -41,8 +41,12 @@ plugins
 back
 start
 ```
-
+- U
 
 ```
 sapgui <sap server hostname> <system number>
 ```
+
+## References
+- [SAP Penetration Testing Using Metasploit](http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf)
+- https://github.com/davehardy20/SAP-Stuff - a script to semi-automate Bizploit
