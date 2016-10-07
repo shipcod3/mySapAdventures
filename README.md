@@ -60,7 +60,7 @@ TMSADM : PASSWORD, $1Pawd2&
 SAPCPIC : ADMIN	
 EARLYWATCH: SUPPORT
 ```
-- Run Wireshark then authenticate to the client (SAP GUI) using the credentials you got because some clients transmit credentials without SSL.
+- Run Wireshark then authenticate to the client (SAP GUI) using the credentials you got because some clients transmit credentials without SSL. There are two known plugins for Wireshark that can dissect the main headers used by the SAP DIAG protocol too: [CoreLabs SAP dissection plug-in](https://www.coresecurity.com/corelabs-research/open-source-tools/sap-dissection-plug-in-wireshark) and [SAP DIAG plugin by Positive Research Center](http://blog.ptsecurity.com/2011/10/sap-diag-decompress-plugin-for.html).
 - Check for privilege escalations like using some SAP Transaction Codes for low-privilege users:
 ```
 SU01 - To create and maintain the users
