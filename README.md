@@ -42,7 +42,7 @@ plugins
 back
 start
 ```
-- Use the sap_service_discovery auxiliary Metasploit module for enumerating SAP instances/services/components:
+- Use the [SAP SERVICE DISCOVERY](https://www.rapid7.com/db/modules/auxiliary/scanner/sap/sap_service_discovery) auxiliary Metasploit module for enumerating SAP instances/services/components:
 ```
 msf > use auxiliary/scanner/sap/sap_service_discovery
 msf > set rhost <host>
