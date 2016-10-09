@@ -48,7 +48,7 @@ msf > use auxiliary/scanner/sap/sap_service_discovery
 msf > set rhost <host>
 msf > run
 ```
-- 
+- Document the findings.
 
 ## Testing the Thick Client / SAP GUI
 - Here is the command to connect to SAP GUI
@@ -75,12 +75,13 @@ SE84 - Information System for SAP R/3 Authorizations
 ```
 
 ## Testing the web interface
-- Crawl the URLs [see discovery phase]
-- Fuzz the URLs like in the discovery phase
+- Crawl the URLs (see discovery phase).
+- Fuzz the URLs like in the discovery phase.
 - Look for common web vulnerabilities (Refer to OWASP Top 10) because there are XSS, RCE, XXE, etc. vulnerabilities in some places.
+- Check out Jason Haddix's [The Bug Hunters Methodology](https://github.com/jhaddix/tbhm) for testing web vulnerabilities.
 
 ## Attack!
-
+- 
 
 ## References
 - [SAP Penetration Testing Using Metasploit](http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf)
