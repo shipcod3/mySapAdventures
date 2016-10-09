@@ -77,6 +77,9 @@ SE84 - Information System for SAP R/3 Authorizations
 ## Testing the web interface
 - Crawl the URLs [see discovery phase]
 - Fuzz the URLs like in the discovery phase
+- Look for common web vulnerabilities (Refer to OWASP Top 10) because there are XSS, RCE, XXE, etc. vulnerabilities in some places.
+
+## Attack!
 
 
 ## References
