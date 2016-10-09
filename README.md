@@ -81,7 +81,7 @@ SE84 - Information System for SAP R/3 Authorizations
 - Check out Jason Haddix's [The Bug Hunters Methodology](https://github.com/jhaddix/tbhm) for testing web vulnerabilities.
 
 ## Attack!
-- 
+- To be updated...
 
 ## References
 - [SAP Penetration Testing Using Metasploit](http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf)
