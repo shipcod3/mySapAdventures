@@ -5,7 +5,10 @@ by: Jay Turla @shipcod3
 
 ## Discovery
 - Check the Application Scope for testing
-- Use OSINT (open source intelligence) and Google Dorks to check for files, subdomains, and juicy information if the application is Internet-facing or public.
+- Use OSINT (open source intelligence), Shodan and Google Dorks to check for files, subdomains, and juicy information if the application is Internet-facing or public:
+```
+inurl:50000/irj/portal (sample Google Dork)
+```
 - Use nmap to check for open ports and known services (webdnypro, web services, web servers, etc.)
 - Crawl the URLs if there is a web server running.
 - Fuzz the directories (you can use Burp Intruder) if it has web servers on certain ports. Here are some good wordlists provided by the [SecLists Project](https://github.com/danielmiessler/SecLists) for finding default SAP ICM Paths and other interesting directories or files:
@@ -163,6 +166,7 @@ Matching Modules
    exploit/windows/misc/sap_2005_license                                    2009-08-01       great      SAP Business One License Manager 2005 Buffer Overflow
    exploit/windows/misc/sap_netweaver_dispatcher                            2012-05-08       normal     SAP NetWeaver Dispatcher DiagTraceR3Info Buffer Overflow                   
 ```
+- Try to use some known exploits or attacks like 
 
 ## References
 - [SAP Penetration Testing Using Metasploit](http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf)
