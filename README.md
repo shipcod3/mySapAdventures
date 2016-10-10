@@ -83,7 +83,70 @@ SE84 - Information System for SAP R/3 Authorizations
 ## Attack!
 - Plan the possible exploits, there are a lot of Metasploit modules for SAP discovery and exploits:
 ```
-to be updated
+msf > search sap
+
+Matching Modules
+================
+
+   Name                                                                     Disclosure Date  Rank       Description
+   ----                                                                     ---------------  ----       -----------
+   auxiliary/admin/maxdb/maxdb_cons_exec                                    2008-01-09       normal     SAP MaxDB cons.exe Remote Command Injection
+   auxiliary/admin/sap/sap_configservlet_exec_noauth                        2012-11-01       normal     SAP ConfigServlet OS Command Execution
+   auxiliary/admin/sap/sap_mgmt_con_osexec                                                   normal     SAP Management Console OSExecute
+   auxiliary/dos/sap/sap_soap_rfc_eps_delete_file                                            normal     SAP SOAP EPS_DELETE_FILE File Deletion
+   auxiliary/dos/windows/http/pi3web_isapi                                  2008-11-13       normal     Pi3Web ISAPI DoS
+   auxiliary/dos/windows/llmnr/ms11_030_dnsapi                              2011-04-12       normal     Microsoft Windows DNSAPI.dll LLMNR Buffer Underrun DoS
+   auxiliary/scanner/http/sap_businessobjects_user_brute                                     normal     SAP BusinessObjects User Bruteforcer
+   auxiliary/scanner/http/sap_businessobjects_user_brute_web                                 normal     SAP BusinessObjects Web User Bruteforcer
+   auxiliary/scanner/http/sap_businessobjects_user_enum                                      normal     SAP BusinessObjects User Enumeration
+   auxiliary/scanner/http/sap_businessobjects_version_enum                                   normal     SAP BusinessObjects Version Detection
+   auxiliary/scanner/sap/sap_ctc_verb_tampering_user_mgmt                                    normal     SAP CTC Service Verb Tampering User Management
+   auxiliary/scanner/sap/sap_hostctrl_getcomputersystem                                      normal     SAP Host Agent Information Disclosure
+   auxiliary/scanner/sap/sap_icf_public_info                                                 normal     SAP ICF /sap/public/info Service Sensitive Information Gathering
+   auxiliary/scanner/sap/sap_icm_urlscan                                                     normal     SAP URL Scanner
+   auxiliary/scanner/sap/sap_mgmt_con_abaplog                                                normal     SAP Management Console ABAP Syslog Disclosure
+   auxiliary/scanner/sap/sap_mgmt_con_brute_login                                            normal     SAP Management Console Brute Force
+   auxiliary/scanner/sap/sap_mgmt_con_extractusers                                           normal     SAP Management Console Extract Users
+   auxiliary/scanner/sap/sap_mgmt_con_getaccesspoints                                        normal     SAP Management Console Get Access Points
+   auxiliary/scanner/sap/sap_mgmt_con_getenv                                                 normal     SAP Management Console getEnvironment
+   auxiliary/scanner/sap/sap_mgmt_con_getlogfiles                                            normal     SAP Management Console Get Logfile
+   auxiliary/scanner/sap/sap_mgmt_con_getprocesslist                                         normal     SAP Management Console GetProcessList
+   auxiliary/scanner/sap/sap_mgmt_con_getprocessparameter                                    normal     SAP Management Console Get Process Parameters
+   auxiliary/scanner/sap/sap_mgmt_con_instanceproperties                                     normal     SAP Management Console Instance Properties
+   auxiliary/scanner/sap/sap_mgmt_con_listlogfiles                                           normal     SAP Management Console List Logfiles
+   auxiliary/scanner/sap/sap_mgmt_con_startprofile                                           normal     SAP Management Console getStartProfile
+   auxiliary/scanner/sap/sap_mgmt_con_version                                                normal     SAP Management Console Version Detection
+   auxiliary/scanner/sap/sap_router_info_request                                             normal     SAPRouter Admin Request
+   auxiliary/scanner/sap/sap_router_portscanner                                              normal     SAPRouter Port Scanner
+   auxiliary/scanner/sap/sap_service_discovery                                               normal     SAP Service Discovery
+   auxiliary/scanner/sap/sap_smb_relay                                                       normal     SAP SMB Relay Abuse
+   auxiliary/scanner/sap/sap_soap_bapi_user_create1                                          normal     SAP /sap/bc/soap/rfc SOAP Service BAPI_USER_CREATE1 Function User Creation
+   auxiliary/scanner/sap/sap_soap_rfc_brute_login                                            normal     SAP SOAP Service RFC_PING Login Brute Forcer
+   auxiliary/scanner/sap/sap_soap_rfc_dbmcli_sxpg_call_system_command_exec                   normal     SAP /sap/bc/soap/rfc SOAP Service SXPG_CALL_SYSTEM Function Command Injection
+   auxiliary/scanner/sap/sap_soap_rfc_dbmcli_sxpg_command_exec                               normal     SAP /sap/bc/soap/rfc SOAP Service SXPG_COMMAND_EXEC Function Command Injection
+   auxiliary/scanner/sap/sap_soap_rfc_eps_get_directory_listing                              normal     SAP SOAP RFC EPS_GET_DIRECTORY_LISTING Directories Information Disclosure
+   auxiliary/scanner/sap/sap_soap_rfc_pfl_check_os_file_existence                            normal     SAP SOAP RFC PFL_CHECK_OS_FILE_EXISTENCE File Existence Check
+   auxiliary/scanner/sap/sap_soap_rfc_ping                                                   normal     SAP /sap/bc/soap/rfc SOAP Service RFC_PING Function Service Discovery
+   auxiliary/scanner/sap/sap_soap_rfc_read_table                                             normal     SAP /sap/bc/soap/rfc SOAP Service RFC_READ_TABLE Function Dump Data
+   auxiliary/scanner/sap/sap_soap_rfc_rzl_read_dir                                           normal     SAP SOAP RFC RZL_READ_DIR_LOCAL Directory Contents Listing
+   auxiliary/scanner/sap/sap_soap_rfc_susr_rfc_user_interface                                normal     SAP /sap/bc/soap/rfc SOAP Service SUSR_RFC_USER_INTERFACE Function User Creation
+   auxiliary/scanner/sap/sap_soap_rfc_sxpg_call_system_exec                                  normal     SAP /sap/bc/soap/rfc SOAP Service SXPG_CALL_SYSTEM Function Command Execution
+   auxiliary/scanner/sap/sap_soap_rfc_sxpg_command_exec                                      normal     SAP SOAP RFC SXPG_COMMAND_EXECUTE
+   auxiliary/scanner/sap/sap_soap_rfc_system_info                                            normal     SAP /sap/bc/soap/rfc SOAP Service RFC_SYSTEM_INFO Function Sensitive Information Gathering
+   auxiliary/scanner/sap/sap_soap_th_saprel_disclosure                                       normal     SAP /sap/bc/soap/rfc SOAP Service TH_SAPREL Function Information Disclosure
+   auxiliary/scanner/sap/sap_web_gui_brute_login                                             normal     SAP Web GUI Login Brute Forcer
+   exploit/multi/sap/sap_mgmt_con_osexec_payload                            2011-03-08       excellent  SAP Management Console OSExecute Payload Execution
+   exploit/multi/sap/sap_soap_rfc_sxpg_call_system_exec                     2013-03-26       great      SAP SOAP RFC SXPG_CALL_SYSTEM Remote Command Execution
+   exploit/multi/sap/sap_soap_rfc_sxpg_command_exec                         2012-05-08       great      SAP SOAP RFC SXPG_COMMAND_EXECUTE Remote Command Execution
+   exploit/windows/browser/enjoysapgui_comp_download                        2009-04-15       excellent  EnjoySAP SAP GUI ActiveX Control Arbitrary File Download
+   exploit/windows/browser/enjoysapgui_preparetoposthtml                    2007-07-05       normal     EnjoySAP SAP GUI ActiveX Control Buffer Overflow
+   exploit/windows/browser/sapgui_saveviewtosessionfile                     2009-03-31       normal     SAP AG SAPgui EAI WebViewer3D Buffer Overflow
+   exploit/windows/http/sap_configservlet_exec_noauth                       2012-11-01       great      SAP ConfigServlet Remote Code Execution
+   exploit/windows/http/sap_host_control_cmd_exec                           2012-08-14       average    SAP NetWeaver HostControl Command Injection
+   exploit/windows/http/sapdb_webtools                                      2007-07-05       great      SAP DB 7.4 WebTools Buffer Overflow
+   exploit/windows/lpd/saplpd                                               2008-02-04       good       SAP SAPLPD 6.28 Buffer Overflow
+   exploit/windows/misc/sap_2005_license                                    2009-08-01       great      SAP Business One License Manager 2005 Buffer Overflow
+   exploit/windows/misc/sap_netweaver_dispatcher                            2012-05-08       normal     SAP NetWeaver Dispatcher DiagTraceR3Info Buffer Overflow                   
 ```
 
 ## References
