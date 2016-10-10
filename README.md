@@ -45,8 +45,23 @@ start
 - Use the [SAP SERVICE DISCOVERY](https://www.rapid7.com/db/modules/auxiliary/scanner/sap/sap_service_discovery) auxiliary Metasploit module for enumerating SAP instances/services/components:
 ```
 msf > use auxiliary/scanner/sap/sap_service_discovery
-msf > set rhost <host>
-msf > run
+msf auxiliary(sap_service_discovery) > show options
+
+Module options (auxiliary/scanner/sap/sap_service_discovery):
+
+   Name         Current Setting  Required  Description
+   ----         ---------------  --------  -----------
+   CONCURRENCY  10               yes       The number of concurrent ports to check per host
+   INSTANCES    00-01            yes       Instance numbers to scan (e.g. 00-05,00-99)
+   RHOSTS                        yes       The target address range or CIDR identifier
+   THREADS      1                yes       The number of concurrent threads
+   TIMEOUT      1000             yes       The socket connect timeout in milliseconds
+
+msf auxiliary(sap_service_discovery) > set rhosts 192.168.96.101
+rhosts => 192.168.96.101
+msf auxiliary(sap_service_discovery) > run
+
+[*] 192.168.96.101:       - [SAP] Beginning service Discovery '192.168.96.101'
 ```
 - Document the findings.
 
