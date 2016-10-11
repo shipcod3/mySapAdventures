@@ -9,7 +9,7 @@ by: Jay Turla @shipcod3
 ```
 inurl:50000/irj/portal (sample Google Dork)
 ```
-- Use nmap to check for open ports and known services (webdnypro, web services, web servers, etc.)
+- Use nmap to check for open ports and known services (sap routers, webdnypro, web services, web servers, etc.)
 - Crawl the URLs if there is a web server running.
 - Fuzz the directories (you can use Burp Intruder) if it has web servers on certain ports. Here are some good wordlists provided by the [SecLists Project](https://github.com/danielmiessler/SecLists) for finding default SAP ICM Paths and other interesting directories or files:
 ```
