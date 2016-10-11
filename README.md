@@ -99,6 +99,7 @@ SE84 - Information System for SAP R/3 Authorizations
 - Check out Jason Haddix's ["The Bug Hunters Methodology"](https://github.com/jhaddix/tbhm) for testing web vulnerabilities.
 
 ## Attack!
+- Check if it runs on old servers or technologies like Windows 2000.
 - Plan the possible exploits / attacks, there are a lot of Metasploit modules for SAP discovery (auxiliary modules) and exploits:
 ```
 msf > search sap
