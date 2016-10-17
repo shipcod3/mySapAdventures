@@ -91,12 +91,15 @@ SU02 - For Manual creation of profiles
 SM19 - Security audit - configuration
 SE84 - Information System for SAP R/3 Authorizations
 ```
+- Check if you can execute system commands / run scripts in the client.
+- Check if you can do XSS on BAPI Explorer
 
 ## Testing the web interface
 - Crawl the URLs (see discovery phase).
 - Fuzz the URLs like in the discovery phase.
 - Look for common web vulnerabilities (Refer to OWASP Top 10) because there are XSS, RCE, XXE, etc. vulnerabilities in some places.
 - Check out Jason Haddix's ["The Bug Hunters Methodology"](https://github.com/jhaddix/tbhm) for testing web vulnerabilities.
+- Auth Bypass via verb Tampering? Maybe :)
 
 ## Attack!
 - Check if it runs on old servers or technologies like Windows 2000.
@@ -199,3 +202,4 @@ bizploit> start
 - [SAP NetWeaver ABAP security configuration part 3: Default passwords for access to the application](https://erpscan.com/press-center/blog/sap-netweaver-abap-security-configuration-part-2-default-passwords-for-access-to-the-application/)
 - [List of ABAP-transaction codes related to SAP security](https://wiki.scn.sap.com/wiki/display/Security/List+of+ABAP-transaction+codes+related+to+SAP+security)
 - [Breaking SAP Portal](https://erpscan.com/wp-content/uploads/presentations/2012-HackerHalted-Breaking-SAP-Portal.pdf)
+- [Top 10 most interesting SAP vulnerabilities and attacks](https://erpscan.com/wp-content/uploads/presentations/2012-Kuwait-InfoSecurity-Top-10-most-interesting-vulnerabilities-and-attacks-in-SAP.pdf)
