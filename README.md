@@ -7,7 +7,10 @@ by: Jay Turla @shipcod3
 - Check the Application Scope for testing
 - Use OSINT (open source intelligence), Shodan and Google Dorks to check for files, subdomains, and juicy information if the application is Internet-facing or public:
 ```
-inurl:50000/irj/portal (sample Google Dork)
+inurl:50000/irj/portal
+inurl:IciEventService/IciEventConf
+inurl:/wsnavigator/jsps/test.jsp
+inurl:/irj/go/km/docs/
 ```
 - Use nmap to check for open ports and known services (sap routers, webdnypro, web services, web servers, etc.)
 - Crawl the URLs if there is a web server running.
