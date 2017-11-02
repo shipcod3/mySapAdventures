@@ -4,7 +4,7 @@ A quick methodology on testing/hacking SAP Applications for n00bz and bug bounty
 by: Jay Turla @shipcod3
 
 ## Discovery
-- Check the Application Scope for testing
+- Check the Application Scope or Program Brief for testing
 - Use OSINT (open source intelligence), Shodan and Google Dorks to check for files, subdomains, and juicy information if the application is Internet-facing or public:
 ```
 inurl:50000/irj/portal
