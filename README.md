@@ -99,7 +99,10 @@ SE84 - Information System for SAP R/3 Authorizations
 
 ## Testing the web interface
 - Crawl the URLs (see discovery phase).
-- Fuzz the URLs like in the discovery phase.
+- Fuzz the URLs like in the discovery phase. Here is what http://SAP:50000/index.html looks like:
+
+
+
 - Look for common web vulnerabilities (Refer to OWASP Top 10) because there are XSS, RCE, XXE, etc. vulnerabilities in some places.
 - Check out Jason Haddix's ["The Bug Hunters Methodology"](https://github.com/jhaddix/tbhm) for testing web vulnerabilities.
 - Auth Bypass via verb Tampering? Maybe :)
