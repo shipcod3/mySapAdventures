@@ -13,6 +13,7 @@ inurl:IciEventService/IciEventConf
 inurl:/wsnavigator/jsps/test.jsp
 inurl:/irj/go/km/docs/
 https://www.shodan.io/search?query=sap+portal
+https://www.shodan.io/search?query=SAP+Netweaver
 ```
 - Here is what http://SAP:50000/irj/portal looks like
 
