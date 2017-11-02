@@ -14,6 +14,7 @@ inurl:/wsnavigator/jsps/test.jsp
 inurl:/irj/go/km/docs/
 https://www.shodan.io/search?query=sap+portal
 https://www.shodan.io/search?query=SAP+Netweaver
+https://www.shodan.io/search?query=SAP+J2EE+Engine
 ```
 - Here is what http://SAP:50000/irj/portal looks like
 
