@@ -1,7 +1,7 @@
 # mySapAdventures
 A quick methodology on testing/hacking SAP Applications for n00bz and bug bounty hunters
 
-by: Jay Turla @shipcod3
+by: Jay Turla ([@shipcod3](https://twitter.com/shipcod3))
 
 
 ## Discovery
