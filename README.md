@@ -12,6 +12,7 @@ inurl:50000/irj/portal
 inurl:IciEventService/IciEventConf
 inurl:/wsnavigator/jsps/test.jsp
 inurl:/irj/go/km/docs/
+https://www.shodan.io/search?query=sap+portal
 ```
 - Here is what http://SAP:50000/irj/portal looks like
 
@@ -115,6 +116,40 @@ SE84 - Information System for SAP R/3 Authorizations
 - Are the credentials submitted over HTTP? If it is then it it is considered as P3 based on Bugcrowd's [Vulnerability Rating Taxonomy](https://bugcrowd.com/vulnerability-rating-taxonomy): Broken Authentication and Session Management | Weak Login Function Over HTTP. Hint: Check out http://SAP:50000/startPage too or the logon portals :)
 
 ![alt text](https://github.com/shipcod3/mySapAdventures/blob/master/screengrabs/startPage.jpeg)
+
+- http://SAP/sap/public/info contains some juicy information:
+
+```
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<SOAP-ENV:Body>
+<rfc:RFC_SYSTEM_INFO.Response xmlns:rfc="urn:sap-com:document:sap:rfc:functions">
+<RFCSI>
+<RFCPROTO>011</RFCPROTO>
+<RFCCHARTYP>4102</RFCCHARTYP>
+<RFCINTTYP>BIG</RFCINTTYP>
+<RFCFLOTYP>IE3</RFCFLOTYP>
+<RFCDEST>randomnum</RFCDEST>
+<RFCHOST>randomnum</RFCHOST>
+<RFCSYSID>BRQ</RFCSYSID>
+<RFCDATABS>BRQ</RFCDATABS>
+<RFCDBHOST>randomnum</RFCDBHOST>
+<RFCDBSYS>ORACLE</RFCDBSYS>
+<RFCSAPRL>740</RFCSAPRL>
+<RFCMACH>324</RFCMACH>
+<RFCOPSYS>AIX</RFCOPSYS>
+<RFCTZONE>-25200</RFCTZONE>
+<RFCDAYST/>
+<RFCIPADDR>192.168.1.8</RFCIPADDR>
+<RFCKERNRL>749</RFCKERNRL>
+<RFCHOST2>randomnum</RFCHOST2>
+<RFCSI_RESV/>
+<RFCIPV6ADDR>192.168.1.8</RFCIPV6ADDR>
+</RFCSI>
+</rfc:RFC_SYSTEM_INFO.Response>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+```
 
 ## Attack!
 - Check if it runs on old servers or technologies like Windows 2000.
