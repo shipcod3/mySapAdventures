@@ -3,7 +3,6 @@ A quick methodology on testing/hacking SAP Applications for n00bz and bug bounty
 
 by: Jay Turla @shipcod3
 
-![alt text](https://raw.githubusercontent.com/shipcod3/mySapAdventures/master/screengrabs/sap%20logon.jpeg)
 
 ## Discovery
 - Check the Application Scope or Program Brief for testing
@@ -14,6 +13,10 @@ inurl:IciEventService/IciEventConf
 inurl:/wsnavigator/jsps/test.jsp
 inurl:/irj/go/km/docs/
 ```
+- Here is what http://SAP:50000/irj/portal looks like
+
+![alt text](https://raw.githubusercontent.com/shipcod3/mySapAdventures/master/screengrabs/sap%20logon.jpeg)
+
 - Use nmap to check for open ports and known services (sap routers, webdnypro, web services, web servers, etc.)
 - Crawl the URLs if there is a web server running.
 - Fuzz the directories (you can use Burp Intruder) if it has web servers on certain ports. Here are some good wordlists provided by the [SecLists Project](https://github.com/danielmiessler/SecLists) for finding default SAP ICM Paths and other interesting directories or files:
