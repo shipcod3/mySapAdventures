@@ -112,9 +112,9 @@ SE84 - Information System for SAP R/3 Authorizations
 - Check out Jason Haddix's ["The Bug Hunters Methodology"](https://github.com/jhaddix/tbhm) for testing web vulnerabilities.
 - Auth Bypass via verb Tampering? Maybe :)
 - Open ```http://SAP:50000/webdynpro/resources/sap.com/XXX/JWFTestAddAssignees# ``` then hit the "Choose" Button and then in the opened window press “Search”. You should be able to see a list of SAP users (Vulnerability Reference: [ERPSCAN-16-010](https://erpscan.com/advisories/erpscan-16-010-sap-netweaver-7-4-information-disclosure/) )
-- Are the credentials submitted over HTTP? If it is then it it is considered as P3 based on Bugcrowd's [Vulnerability Rating Taxonomy](https://bugcrowd.com/vulnerability-rating-taxonomy): Broken Authentication and Session Management | Weak Login Function Over HTTP. Hint: Check out http://SAP:50000/startPage too :)
+- Are the credentials submitted over HTTP? If it is then it it is considered as P3 based on Bugcrowd's [Vulnerability Rating Taxonomy](https://bugcrowd.com/vulnerability-rating-taxonomy): Broken Authentication and Session Management | Weak Login Function Over HTTP. Hint: Check out http://SAP:50000/startPage too or the logon portals :)
 
-
+![alt text](https://github.com/shipcod3/mySapAdventures/blob/master/screengrabs/startPage.jpeg)
 
 ## Attack!
 - Check if it runs on old servers or technologies like Windows 2000.
