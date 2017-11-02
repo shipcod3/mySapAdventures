@@ -76,7 +76,7 @@ msf auxiliary(sap_service_discovery) > run
 ```
 sapgui <sap server hostname> <system number>
 ```
-- Check for default credentials:
+- Check for default credentials (In Bugcrowd's [Vulnerability Rating Taxonomy](https://bugcrowd.com/vulnerability-rating-taxonomy), this is considered as P1 -> Server Security Misconfiguration | Using Default Credentials | Production Server):
 ```
 SAP* : 06071992, PASS
 DDIC : 19920706	
@@ -103,6 +103,7 @@ SE84 - Information System for SAP R/3 Authorizations
 - Look for common web vulnerabilities (Refer to OWASP Top 10) because there are XSS, RCE, XXE, etc. vulnerabilities in some places.
 - Check out Jason Haddix's ["The Bug Hunters Methodology"](https://github.com/jhaddix/tbhm) for testing web vulnerabilities.
 - Auth Bypass via verb Tampering? Maybe :)
+- Open ```http://SAP:50000/webdynpro/resources/sap.com/XXX/JWFTestAddAssignees# ``` then hit the "Choose" Button and then in the opened window press “Search”. You should be able to see a list of SAP users (Vulnerability Reference: [ERPSCAN-16-010](https://erpscan.com/advisories/erpscan-16-010-sap-netweaver-7-4-information-disclosure/) )
 
 ## Attack!
 - Check if it runs on old servers or technologies like Windows 2000.
