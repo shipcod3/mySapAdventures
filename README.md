@@ -5,7 +5,7 @@ by: Jay Turla ([@shipcod3](https://twitter.com/shipcod3))
 
 
 ## Discovery
-- Check the Application Scope or Program Brief for testing
+- Check the Application Scope or Program Brief for testing. Take note of the hostnames or system instances for connecting to SAP GUI.
 - Use OSINT (open source intelligence), Shodan and Google Dorks to check for files, subdomains, and juicy information if the application is Internet-facing or public:
 ```
 inurl:50000/irj/portal
