@@ -253,6 +253,7 @@ bizploit> start
 ## Other Useful Tools for Testing
 - [PowerSAP](https://github.com/airbus-seclab/powersap) - Powershell tool to assess sap security
 - [Burp Suite](https://portswigger.net/burp) - a must have for directory fuzzing and web security assessments
+- [pysap](https://github.com/CoreSecurity/pysap) - Python library to craft SAP network protocol packets
 
 ## References
 - [SAP Penetration Testing Using Metasploit](http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf)
