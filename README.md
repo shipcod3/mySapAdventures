@@ -87,12 +87,12 @@ sapgui <sap server hostname> <system number>
 - Check for default credentials (In Bugcrowd's [Vulnerability Rating Taxonomy](https://bugcrowd.com/vulnerability-rating-taxonomy), this is considered as P1 -> Server Security Misconfiguration | Using Default Credentials | Production Server):
 ```
 SAP* : 06071992, PASS
-DDIC : 19920706	
+DDIC : 19920706
 TMSADM : PASSWORD, $1Pawd2&    	
-SAPCPIC : ADMIN	
+SAPCPIC : ADMIN
 EARLYWATCH: SUPPORT
 ```
-- Run Wireshark then authenticate to the client (SAP GUI) using the credentials you got because some clients transmit credentials without SSL. There are two known plugins for Wireshark that can dissect the main headers used by the SAP DIAG protocol too: [CoreLabs SAP dissection plug-in](https://www.coresecurity.com/corelabs-research/open-source-tools/sap-dissection-plug-in-wireshark) and [SAP DIAG plugin by Positive Research Center](http://blog.ptsecurity.com/2011/10/sap-diag-decompress-plugin-for.html).
+- Run Wireshark then authenticate to the client (SAP GUI) using the credentials you got because some clients transmit credentials without SSL. There are two known plugins for Wireshark that can dissect the main headers used by the SAP DIAG protocol too: [SecureAuth Labs SAP dissection plug-in](https://www.secureauth.com/labs/open-source-tools/sap-dissection-plug-wireshark) and [SAP DIAG plugin by Positive Research Center](http://blog.ptsecurity.com/2011/10/sap-diag-decompress-plugin-for.html).
 - Check for privilege escalations like using some SAP Transaction Codes (tcodes) for low-privilege users:
 ```
 SU01 - To create and maintain the users
@@ -253,7 +253,7 @@ bizploit> start
 ## Other Useful Tools for Testing
 - [PowerSAP](https://github.com/airbus-seclab/powersap) - Powershell tool to assess sap security
 - [Burp Suite](https://portswigger.net/burp) - a must have for directory fuzzing and web security assessments
-- [pysap](https://github.com/CoreSecurity/pysap) - Python library to craft SAP network protocol packets
+- [pysap](https://github.com/SecureAuthCorp/pysap) - Python library to craft SAP network protocol packets
 
 ## References
 - [SAP Penetration Testing Using Metasploit](http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf)
