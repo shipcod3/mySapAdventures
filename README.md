@@ -175,7 +175,7 @@ SE84 - Information System for SAP R/3 Authorizations
 - Are the credentials submitted over HTTP? If it is then it is considered as P3 based on Bugcrowd's [Vulnerability Rating Taxonomy](https://bugcrowd.com/vulnerability-rating-taxonomy): Broken Authentication and Session Management | Weak Login Function Over HTTP. Hint: Check out http://SAP:50000/startPage too or the logon portals :)
 
 ![alt text](https://github.com/shipcod3/mySapAdventures/blob/master/screengrabs/startPage.jpeg)
-
+- Try `/irj/go/km/navigation/` for possible directory listing or authentication bypass
 - http://SAP/sap/public/info contains some juicy information:
 
 ```
