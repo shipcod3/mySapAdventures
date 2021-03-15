@@ -5,4 +5,5 @@ Fork this repo and issue a pull request
 Jay Turla - @shipcod3
 
 ## List of Contributors
-- To be updated
+- [Martin Gallo](https://github.com/martingalloar)
+- [Alex G. ](Zeecka)
