@@ -28,7 +28,7 @@ https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web_Content/URL
 https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web_Content/CMS/SAP.fuzz.txt
 https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web_Content/sap.txt
 ```
-- Run [bizploit](https://www.onapsis.com/research/free-solutions)'s discovery plugins (note: customized script from davehardy20):
+- Run [bizploit](https://github.com/natrix-fork/bizploit/blob/master/Bizploit.zip)'s discovery plugins (note: customized script from davehardy20):
 ```
 targets
 	addTarget
