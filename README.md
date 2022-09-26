@@ -320,3 +320,6 @@ bizploit> start
 - [Breaking SAP Portal](https://erpscan.com/wp-content/uploads/presentations/2012-HackerHalted-Breaking-SAP-Portal.pdf)
 - [Top 10 most interesting SAP vulnerabilities and attacks](https://erpscan.com/wp-content/uploads/presentations/2012-Kuwait-InfoSecurity-Top-10-most-interesting-vulnerabilities-and-attacks-in-SAP.pdf)
 - [Assessing the security of SAP ecosystems with bizploit: Discovery](https://www.onapsis.com/blog/assessing-security-sap-ecosystems-bizploit-discovery)
+
+## Presentations 
+- [SAP (in)security: Scrubbing SAP clean with SOAP](https://blog.c22.cc/2011/12/11/seczone-2011-sap-insecurity-slides/)
