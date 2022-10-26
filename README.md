@@ -307,6 +307,9 @@ bizploit/plugins> start
 bizploit/plugins> back
 bizploit> start
 ```
+## Bizploit Fork
+- https://github.com/natrix-fork/bizploit
+
 ## Other Useful Tools for Testing
 - [PowerSAP](https://github.com/airbus-seclab/powersap) - Powershell tool to assess sap security
 - [Burp Suite](https://portswigger.net/burp) - a must have for directory fuzzing and web security assessments
